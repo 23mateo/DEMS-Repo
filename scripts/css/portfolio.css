@@ -9,3 +9,9 @@ body{
     -webkit-filter: blur(1000px);
     -webkit-filter:invert();
 }
+
+span.mainFont{
+    size: 18pt;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
