@@ -1,0 +1,17 @@
+body{
+    background-image: url(../../images/JaccobM-1601683.gif);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 80%;
+    width: 80%;
+    filter: blur(1000px);
+    -webkit-filter: blur(1000px);
+    -webkit-filter:invert();
+}
+
+span.mainFont{
+    size: 18pt;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
