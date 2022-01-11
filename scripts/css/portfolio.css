@@ -1,18 +1,102 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: rgb(49, 49, 49);
+}
 
+.deconstructed {
+  position: relative;
+  margin: auto;
+  height: 0.87em;
+  color: transparent;
+  font-family: 'Cambay', sans-serif;
+  font-size: 6vw;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.03em;
+}
 
+.deconstructed > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #ff6464;
+  pointer-events: none;
+  text-shadow: black 2px 1px 4px;
+}
 
+.deconstructed > div:nth-child(1) {
+  -webkit-mask-image: linear-gradient(black 25%, transparent 25%);
+  mask-image: linear-gradient(black 25%, transparent 25%);
+  animation: deconstructed1 5s ;
+}
 
+.deconstructed > div:nth-child(2) {
+  -webkit-mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+  mask-image: linear-gradient(transparent 25%, black 25%, black 50%, transparent 50%);
+  animation: deconstructed2 4s ;
+}
 
+.deconstructed > div:nth-child(3) {
+   -webkit-mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+  mask-image: linear-gradient(transparent 50%, black 50%, black 75%, transparent 75%);
+  animation: deconstructed3 5s ;
+}
 
+.deconstructed > div:nth-child(4) {
+   -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
+  mask-image: linear-gradient(transparent 75%, black 75%);
+  animation: deconstructed4 5s;
+}
 
+@keyframes deconstructed1 {
+  0% {
+    transform: translateX(100%);
+  }
+  26% {
+    transform: translateX(0%);
+  }
+
+}
+
+@keyframes deconstructed2 {
+  0% {
+    transform: translateX(100%);
+  }
+  24% {
+    transform: translateX(0.5%);
+  }
+
+}
+
+@keyframes deconstructed3 {
+  0% {
+    transform: translateX(100%);
+  }
+  22% {
+    transform: translateX(0%);
+  }
+
+}
+
+@keyframes deconstructed4 {
+  0% {
+    transform: translateX(100%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+
+}
 
 * { 
   margin: 0; 
   padding: 0; 
 }
-
-
-
 
 
 span.mainFont{
@@ -25,92 +109,6 @@ span.bigFont{
     font-size: 45pt;
     color: white;
 }
-@font-face {
-    font-family: Clip;
-    src: url("https://acupoftee.github.io/fonts/Clip.ttf");
-  }
-  
-  @import url(https://fonts.googleapis.com/css?family=Akronim);
-
-  body {
-      background: rgb(46, 46, 46);
-  }
-  
-  .fire {
-    margin: 50px auto;
-    width: 80%;
-    max-width: 1000px;
-    height: 200px;
-  
-    background-position: center center;
-    background-size: 1000px 200px;
-    border-radius: 10px;
-    font-family: 'Akronim';
-    overflow: hidden;
-      text-align: center;
-    vertical-align: middle;
-  
-  }
-  .fire:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-  }
-  
-  .Blazing {
-    display: inline-block;
-    margin: 0;
-  
-      color: rgb(0, 0, 0);
-      font-size: 100px;
-    line-height: 50px;
-    min-width: 50px;
-    outline: none;
-    vertical-align: middle;
-      
-    text-shadow:
-          0 3px 20px red,
-          0 0 20px red,
-      0 0 10px orange,
-      4px -5px 6px yellow,
-      -4px -10px 10px yellow,
-      0 -10px 30px yellow;
-    animation: 2s Blazing infinite alternate linear;
-  }
-  
-  @keyframes Blazing {
-    0%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-      0 0 10px orange,
-      0 0 0 yellow,
-      0 0 5px yellow,
-      -2px -5px 5px yellow,
-      4px -10px 10px yellow; }
-    25%   { text-shadow: 0 3px 20px red, 0 0 30px red,
-      0 0 20px orange,
-      0 0 5px yellow,
-      -2px -5px 5px yellow,
-      3px -10px 10px yellow,
-      -4px -15px 20px yellow; }
-    50%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-      0 -5px 10px orange,
-      -2px -5px 5px yellow,
-      3px -10px 10px yellow,
-      -4px -15px 20px yellow,
-      2px -20px 30px rgba(255,255,0,0.5); }
-    75%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-      0 -5px 10px orange,
-      3px -5px 5px yellow,
-      -4px -10px 10px yellow,
-      2px -20px 30px rgba(255,255,0,0.5),
-      0px -25px 40px rgba(255,255,0,0)}
-    100%   { text-shadow: 0 3px 20px red, 0 0 20px red,
-      0 0 10px orange,
-      0 0 0 yellow,
-      0 0 5px yellow,
-      -2px -5px 5px yellow,
-      4px -10px 10px yellow; }
-  }
 
   /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
   .flip-card {
@@ -175,5 +173,13 @@ span.bigFont{
 
 .cleanTable{
   background-color: rgb(46, 46, 46);
+  padding: 1%;
+}
+
+.cleanImage{
+  padding: 0%;
+
+}
+.cleantr{
   padding: 10%;
 }
