@@ -5,6 +5,8 @@ div.navbar{
     height: 5%;
     text-align: center;
     margin-top: 1.5%;
+    flex-flow: row-reverse;
+    
 }
 @media only screen and (max-width: 1000px) {
   .navbar {
@@ -15,6 +17,7 @@ div.navbar{
 a.nav{
     border:#813a2ec5 solid 2px;
     border-radius: 2px;
+    height: 5%;
     font-size: 200%;
     text-align: center;
     padding-left: 6%;
@@ -120,7 +123,7 @@ body{
   }
   .deconstructed {
     position: relative;
-    margin: auto;
+    margin: 0.5%;
     height: 0.87em;
     color: transparent;
     font-family: 'Cambay', sans-serif;

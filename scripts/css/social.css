@@ -20,7 +20,7 @@ div.navbar{
   background-color: #4d3939;
   border:#813a2ec5 solid 2px;
   border-radius: 3px;
-  height: 5%;
+  max-height: 5%;
   text-align: center;
   margin-top: 1.5%;
 }
@@ -176,7 +176,7 @@ div.image1{
 }
 .deconstructed {
   position: relative;
-  margin: auto;
+  margin: 0.5%;
   height: 0.87em;
   color: transparent;
   font-family: 'Cambay', sans-serif;
@@ -219,4 +219,53 @@ div.image1{
    -webkit-mask-image: linear-gradient(transparent 75%, black 75%);
   mask-image: linear-gradient(transparent 75%, black 75%);
   animation: deconstructed4 5s;
+}
+@keyframes deconstructed1 {
+  0% {
+    transform: translateX(100%);
+  }
+  26% {
+    transform: translateX(0%);
+  }
+
+}
+
+@keyframes deconstructed2 {
+  0% {
+    transform: translateX(100%);
+  }
+  24% {
+    transform: translateX(0.5%);
+  }
+
+}
+
+@keyframes deconstructed3 {
+  0% {
+    transform: translateX(100%);
+  }
+  22% {
+    transform: translateX(0%);
+  }
+
+}
+
+@keyframes deconstructed4 {
+  0% {
+    transform: translateX(100%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+
+}
+
+* { 
+  margin: 0; 
+  padding: 0; 
+}
+@media only screen and (max-width: 1000px) {
+  .navbar {
+    height: 10%;
+  }
 }
